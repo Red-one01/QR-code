@@ -1,0 +1,32 @@
+<div class="card">
+    <label>
+        <h4 class="card-header">{{ 'CHOICE.QR_TYPE_LABEL' | translate }}<sup>*</sup></h4>
+    </label>
+    <div class="card-body">
+
+
+
+        <div class="">
+
+            <select title="{{ 'CHOICE.QR_TYPE_PLACEHOLDER' | translate }}" id="typeselect"
+                class="form-select text-center form-select-md mb-3" aria-label=".form-select-md example"
+                (change)="onSelectChange($event)">
+                <option selected>{{ 'CHOICE.QR_TYPE_PLACEHOLDER' | translate }}</option>
+                <option value="url">{{ 'CHOICE.QR_TYPE_OPTION_URL' | translate }}</option>
+                <option value="wifi">{{ 'CHOICE.QR_TYPE_OPTION_WIFI' | translate }}</option>
+                <option value="text">{{ 'CHOICE.QR_TYPE_OPTION_TEXT' | translate }}</option>
+                <option value="geoloc">{{ 'CHOICE.QR_TYPE_OPTION_GEOLOC' | translate }}</option>
+                <option value="vcard">{{ 'CHOICE.QR_TYPE_OPTION_VCARD' | translate }}</option>
+                <!-- add a new option choice with the good value and texte -->
+            </select>
+
+            <app-my-url-form *ngIf="selectedValue === 'url'"></app-my-url-form>
+            <app-my-wifi-form *ngIf="selectedValue === 'wifi'"></app-my-wifi-form>
+            <app-my-text-form *ngIf="selectedValue === 'text'"></app-my-text-form>
+            <app-my-geoloc-form *ngIf="selectedValue === 'geoloc'"></app-my-geoloc-form>
+            <app-my-vcard-form *ngIf="selectedValue === 'vcard'"></app-my-vcard-form>
+            <!-- add a new form conponent with the good value in the condition -->
+        </div>
+    </div>
+</div>
+<app-my-design></app-my-design>

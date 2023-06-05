@@ -1,0 +1,43 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+sup {
+  color: rgb(255, 0, 0);
+}
+
+hr {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+  border: 2px solid #ccc;
+}
+
+qrcode canvas,
+qrcode svg {
+  border: 2px solid #DDE5EE;
+}
+
+.card {
+  margin-bottom: 2em;
+}
+
+.card-body {
+  padding-inline: 0 !important;
+}
+
+@media (max-width: 767px) {
+
+  qrcode canvas,
+  qrcode svg {
+    max-width: 75vw;
+    max-height: 75vw;
+    min-width: 45vw;
+    min-height: 45vw;
+    overflow: hidden;
+  }
+}
+
+select,
+form {
+  margin-left: 10%;
+  width: 80%;
+}

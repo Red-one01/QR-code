@@ -1,0 +1,120 @@
+<div class="froggy">
+   <div class="container text-center">
+      <div class="row align-items-start">
+         <div class="col">
+
+            <app-my-choice></app-my-choice>
+
+         </div>
+         <div id="qrresult" class="col">
+            <div>
+               <div id="qr-container">
+                  <qrcode id="qr-hidden" title="QR-Code" [elementType]="QR_code_data.type"
+                     [qrdata]="QR_code_data.qrdata" [width]="QR_code_data.width" [allowEmptyString]="true"
+                     [imageSrc]="QR_code_data.imageSrc?  QR_code_data.imageSrc:undefined"
+                     [imageWidth]="QR_code_data.width/QR_code_data.IMG_SIZE"
+                     [imageHeight]="QR_code_data.width/QR_code_data.IMG_SIZE"
+                     [errorCorrectionLevel]="QR_code_data.errorCorrectionLevel"
+                     [colorDark]="QR_code_data.colorLight ? QR_code_data.colorLight : '000000'"
+                     [colorLight]="QR_code_data.colorDark ? QR_code_data.colorDark : '#ffffff'">
+                  </qrcode>
+                  <qrcode title="QR-Code" [elementType]="QR_code_data.type" [qrdata]="QR_code_data.qrdata"
+                     [width]="QR_code_data.width/coeficient" [allowEmptyString]="true"
+                     [imageSrc]="QR_code_data.imageSrc?  QR_code_data.imageSrc:undefined"
+                     [imageWidth]="QR_code_data.width/QR_code_data.IMG_SIZE / coeficient"
+                     [imageHeight]="QR_code_data.width/QR_code_data.IMG_SIZE / coeficient"
+                     [errorCorrectionLevel]="QR_code_data.errorCorrectionLevel"
+                     [colorDark]="QR_code_data.colorLight ? QR_code_data.colorLight : '000000'"
+                     [colorLight]="QR_code_data.colorDark ? QR_code_data.colorDark : '#ffffff'">
+                  </qrcode>
+               </div>
+               {{'REMINDER' | translate }}<br><br>
+
+
+               <div id="parameters">
+
+                  <details>
+                     <summary> {{'PARAMETERS.DETAILS_LABEL' | translate }}</summary>
+                     <label for="">{{'PARAMETERS.LABEL' | translate }}</label>
+                     <p>{{'PARAMETERS.DESCRIPTION' | translate }}</p>
+
+                     <ul>
+                        <li> {{'PARAMETERS.LOW' | translate }} </li>
+                        <li> {{'PARAMETERS.MEDIUM' | translate }} </li>
+                        <li> {{'PARAMETERS.HIGH' | translate }} </li>
+                        <li> {{'PARAMETERS.VERY_HIGH' | translate }} </li>
+                     </ul>
+
+                     <form class="levelCorrection" action="">
+                        <div id="" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                           <input type="radio" class="btn-check" value="canvas" name="btnradio"
+                              (click)="onChangeCorrectionLevel('L')" id="btnradio3" autocomplete="off">
+                           <label class="btn btn-outline-primary" for="btnradio3">{{'PARAMETERS.LOW_BUTTON' | translate
+                              }}</label>
+
+                           <input type="radio" class="btn-check" value="svg" name="btnradio" id="btnradio4"
+                              (click)="onChangeCorrectionLevel('M')" autocomplete="off">
+                           <label class="btn btn-outline-primary" for="btnradio4">{{'PARAMETERS.MEDIUM_BUTTON' |
+                              translate }}</label>
+
+                           <input type="radio" class="btn-check" value="svg" name="btnradio" id="btnradio5"
+                              (click)="onChangeCorrectionLevel('Q')" autocomplete="off" checked>
+                           <label class="btn btn-outline-primary" for="btnradio5">{{'PARAMETERS.HIGH_BUTTON' | translate
+                              }}</label>
+
+                           <input type="radio" class="btn-check" value="svg" name="btnradio" id="btnradio6"
+                              (click)="onChangeCorrectionLevel('H')" autocomplete="off">
+                           <label class="btn btn-outline-primary" for="btnradio6">{{'PARAMETERS.VERY_HIGH_BUTTON' |
+                              translate }}</label>
+
+                        </div>
+                     </form>
+                  </details>
+               </div>
+               <div class="align_left name">
+                  {{'QR_RESULT.FORMAT' | translate }}</div><br>
+               <div class="align_left" id="final_step">
+
+                  <div id="format" class="btn-group " role="group" aria-label="Basic radio toggle button group">
+                     <input type="radio" class="btn-check" value="canvas" name="btnradio"
+                        (click)="onRadioClick('canvas')" id="btnradio1" autocomplete="off" checked>
+                     <label class="btn btn-outline-primary" for="btnradio1">PNG</label>
+
+                     <input type="radio" class="btn-check" value="svg" name="btnradio" id="btnradio2"
+                        (click)="onRadioClick('svg')" autocomplete="off">
+                     <label class="btn btn-outline-primary" for="btnradio2">SVG</label>
+
+                  </div>
+                  <button class="btn btn-primary" *ngIf="QR_code_data.type === 'canvas'"
+                     (click)="downloadQRCodeImage()"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                           d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                        </path>
+                        <path
+                           d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                        </path>
+                     </svg> {{ 'DOWNLOAD.LABEL_BUTTON' | translate }} png </button>
+
+                  <button class="btn btn-primary" *ngIf="QR_code_data.type === 'svg'" (click)="downloadSVG()"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-download" viewBox="0 0 16 16">
+                        <path
+                           d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z">
+                        </path>
+                        <path
+                           d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z">
+                        </path>
+                     </svg>
+                     {{'DOWNLOAD.LABEL_BUTTON' | translate }} svg
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<footer>
+
+</footer>

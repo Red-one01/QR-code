@@ -1,0 +1,190 @@
+/* Style du bouton */
+.dropbtn {
+  position: relative;
+
+  margin-top: 6em;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(0, 0, 0);
+  padding: 12px;
+  font-size: small;
+  border: none;
+  cursor: pointer;
+}
+
+li {
+  margin-inline: 10%;
+}
+
+.navbar-brand{
+  margin-right: 0;
+}
+
+.dropbtn img {
+  height: auto;
+}
+
+/* Style de la div qui contient le menu déroulant */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Style du menu déroulant */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Style des liens dans le menu déroulant */
+.dropdown-content a {
+  border-bottom: 1px solid black;
+  color: rgb(0, 0, 0);
+  padding-block: 5px;
+  padding-right: 1.5rem;
+
+  text-decoration: none;
+  display: block;
+}
+
+/* Style des liens lorsque l'on passe la souris dessus */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Style de l'image dans les liens */
+.dropdown-content img {
+  height: 16px;
+  margin-right: 8px;
+  display: block;
+}
+
+/* Affiche le menu déroulant lorsque l'on clique sur le bouton */
+.show {
+  display: block;
+}
+
+#myDropdown a {
+  padding: right 100%;
+}
+
+#language {
+  width: 4rem;
+}
+
+.container {
+  width: 100%;
+}
+
+/* Style des liens */
+.navbar-nav li {
+  position: relative;
+}
+
+.navbar-nav li a {
+  display: block;
+  padding: 0px 0px;
+  color: #333;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+.navbar-nav li a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #333;
+  transition: all 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav li a:hover::before {
+  width: 100%;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* Sidenav menu */
+.sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidenav menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #111;
+}
+
+/* Active class */
+.sidenav.active {
+  left: 0;
+}
+
+/* Close btn */
+.sidenav .close {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+#can_i_get_some_burgers {
+  margin: 2%;
+}
+
+#bottom_bun {
+  margin-bottom: 0;
+}
+
+@media (min-width: 725px) {
+  #can_i_get_some_burgers {
+    display: none;
+  }
+
+}
+
+@media (max-width: 724px) {
+  #navbarNav {
+    display: none !important;
+  }
+
+  .navbar-expand {
+    justify-content: space-between;
+  }
+
+}

@@ -1,0 +1,7 @@
+<form>
+    <div *ngFor="let field of fields" class="form-floating mb-3">
+        <input [type]="field.type" class="form-control" [id]="field.id" placeholder="fdfd"
+            (input)="updateFieldValue($event)">
+        <label [for]="field.id">{{field.label| translate}} </label>
+    </div>
+</form>

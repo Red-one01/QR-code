@@ -1,0 +1,10 @@
+<form>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" placeholder="https://www.example.com" (input)="updateSSID($event)">
+        <label for="floatingInput">{{ 'WIFI.SSID' | translate }} </label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="text" class="form-control" placeholder="https://www.example.com" (input)="updatePassword($event)">
+        <label for="floatingInput">{{ 'WIFI.PASSWORD' | translate }}</label>
+    </div>
+</form>

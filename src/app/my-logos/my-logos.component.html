@@ -1,0 +1,21 @@
+<div class="left_read">
+    <label>
+        <h4>{{ 'LOGO.LABEL_SELECT_LOGO' | translate }}</h4>
+        {{ 'LOGO.LABEL_SELECT_LOGO_COMENT' | translate }}
+    </label>
+</div>
+<div id="logo_img" [ngClass]="{'grayed-out': QR_code_data.type === 'svg'}">
+    <div class="logo-container">
+        <img title="Logo" class="border_logo" *ngFor="let url of imagesUrl" [src]="url" (click)="onClickLogo($event)"
+            alt="Logo 1">
+        <img title="{{ 'LOGO.SUPPR_LOGO' | translate }}" attr.aria-label="{{ 'ACCESIBILITY.LOGO_REMOVE' | translate }}"
+            id="nothing_img" src="../../assets/images/croix.svg" (click)="remove_logo()">
+        <img title="{{ 'LOGO.ADD_LOGO' | translate }}" attr.aria-label="{{ 'ACCESIBILITY.LOGO_UPLOAD' | translate }}"
+            id="upload_img" src="../../assets/images/logo.svg" (click)="remove_logo()" (click)="triggerFormFileClick()">
+    </div>
+    <div class="mb-3">
+        <!-- display none input file -->
+        <input [disabled]="QR_code_data.type==='svg'" class="form-control" type="file" id="formFile"
+            accept="image/jpeg, image/png, image/svg+xml" (change)="onFileSelected($event)">
+    </div>
+</div>

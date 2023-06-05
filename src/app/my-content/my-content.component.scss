@@ -1,0 +1,93 @@
+.froggy {
+    margin-inline: 1rem;
+    margin-top: 1rem;
+
+}
+
+.qrresult {
+    position: fixed;
+}
+
+#froggy>div {
+    margin-block: 1rem;
+}
+
+// div {
+//     border: 3px solid rebeccapurple;
+// }
+#final_step {
+    display: flex;
+    justify-content: space-between;
+}
+
+.steps {
+    margin-top: 10rem;
+    margin-inline: 5rem;
+}
+
+#format {
+    display: block;
+    margin-bottom: 1rem;
+    display: inline;
+}
+
+//Advanced Parameters
+
+details {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
+}
+
+#parameters {
+
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 1rem;
+}
+
+#correction {
+    display: flex;
+}
+
+.name {
+    float: left;
+}
+
+.align_left {
+    margin-inline: 10%;
+}
+
+.levelCorrection label {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.btn {
+    padding: 0.45rem;
+    height: fit-content;
+}
+
+li {
+    list-style-type: none;
+}
+
+#qr-hidden {
+    display: none;
+}

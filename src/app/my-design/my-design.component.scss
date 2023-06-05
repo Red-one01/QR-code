@@ -1,0 +1,36 @@
+.slider-value {
+  border: 1px solid #0D6EFD;
+  color: #0D6EFD;
+  border-radius: 5px;
+  padding: 0.1rem;
+}
+
+app-my-logos,
+#text-color,
+#color {
+  margin-top: 1.5rem;
+
+}
+
+#color {
+  margin-bottom: 1rem;
+}
+
+#jpp,
+.left_read {
+  padding-left: calc(var(--bs-gutter-x) * .5);
+  text-align: left;
+}
+
+#color {
+  float: left;
+  padding-left: calc(var(--bs-gutter-x) * .5);
+}
+
+@media (max-width: 724px) {
+  .too-large {
+    font-size: small;
+    padding: 0;
+  }
+
+}

@@ -1,0 +1,86 @@
+{
+    "HOME": {
+        "TITLE": "Hello World!",
+        "DESCRIPTION": "This is an internationalized Angular application."
+    },
+    "CHOICE": {
+        "QR_TYPE_LABEL": "QR code type",
+        "QR_TYPE_PLACEHOLDER": "Select a QR code type",
+        "QR_TYPE_OPTION_URL": "URLs",
+        "QR_TYPE_OPTION_WIFI": "Wifi",
+        "QR_TYPE_OPTION_TEXT": "Text",
+        "QR_TYPE_OPTION_GEOLOC": "Geolocation",
+        "QR_TYPE_OPTION_VCARD": "Contact"
+    },
+    "TEXT_FORM": {
+        "FORM_TEXT_INPUT_LABEL": "Text"
+    },
+    "QR_SIZE": {
+        "LABEL": "QR Code Size"
+    },
+    "QR_COLOR": {
+        "LABEL": "Choose a color for the QR Code",
+        "COLOR_SQUARE_TEXT": "The color of the squares will be adjusted for better contrast",
+        "COLORS_TITLE": "Colors"
+    },
+    "LOGO": {
+        "LABEL_SELECT_LOGO": "Select a logo",
+        "LABEL_SELECT_LOGO_COMENT": "(PNG export format only)",
+        "ALT_SELECTED_IMAGE": "Selected Image",
+        "LABEL_ADD_CUSTOM_LOGO": "Add a custom logo",
+        "SUPPR_LOGO": "Delete logo",
+        "ADD_LOGO": "Add custom logo"
+    },
+    "DOWNLOAD": {
+        "LABEL_BUTTON": "Download"
+    },
+    "GEOLOCATION": {
+        "LATITUDE": "Latitude",
+        "LONGITUDE": "Longitude",
+        "ERROR_MESSAGE": "Please enter a number such as"
+    },
+    "WIFI": {
+        "PASSWORD": "Wifi network password",
+        "SSID": "Wifi network name"
+    },
+    "CONTACT": {
+        "FIRST_NAME": "First Name",
+        "LAST_NAME": "Last Name",
+        "ADDRESS": "Address",
+        "CITY": "City",
+        "ZIP": "Zip Code",
+        "P_NUMBER": "Phone Number",
+        "H_NUMBER": "Mobile Number",
+        "MAIL": "Email"
+    },
+    "QR_RESULT": {
+        "FORMAT": "Export format"
+    },
+    "LANGUAGE": {
+        "MENU": "LANGUAGES"
+    },
+    "PARAMETERS": {
+        "DETAILS_LABEL": "Error Correction Level",
+        "LABEL": "Error Correction Level",
+        "DESCRIPTION": "This allows you to be able in the event of a defect or stains on the QR-code to still be able to scan it thanks to the redundancy of information",
+        "LOW": "Low 7% redundancy",
+        "MEDIUM": "Medium(default) 15%",
+        "HIGH": "High(défaut) 25%",
+        "VERY_HIGH": "Very high 30%",
+        "LOW_BUTTON": "Low",
+        "MEDIUM_BUTTON": "Medium",
+        "HIGH_BUTTON": "High",
+        "VERY_HIGH_BUTTON": "Very high"
+    },
+    "DESIGN": {
+        "CARD_LABEL": "QR code design"
+    },
+    "ACCESIBILITY": {
+        "LOGO_REMOVE": "Button to remove the QR code logo",
+        "LOGO_UPLOAD": "Button to upload a custom logo from storage",
+        "COLORS": "Buttons to choose the colors of the QR code",
+        "COLOR": "One color",
+        "LANGUAGES_MENU": "Menu to change the language"
+    },
+    "REMINDER": "Remember to test your QR code before sharing it."
+}

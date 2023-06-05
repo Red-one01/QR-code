@@ -1,0 +1,46 @@
+.logo-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.logo-container img {
+  display: inline-block;
+  margin-right: 1.5rem;
+}
+
+img {
+  width: 20%;
+  height: 100%;
+  cursor: pointer;
+}
+
+label {
+  margin-bottom: 1.5rem;
+}
+
+.logo-container>img {
+  border: 2px solid #5489b5c4;
+  border-radius: 3px;
+
+}
+
+.grayed-out * {
+
+  background-color: #e9ecef;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+#formFile {
+  display: none;
+}
+
+h4 {
+  margin: 0;
+}
+
+.left_read {
+
+  text-align: left;
+}

@@ -1,0 +1,24 @@
+<form>
+    <div class="input-group has-validation">
+
+        <div class="form-floating mb-3">
+            <input type="text" (input)="onInputLatitude($event)" pattern="-?[0-9]{1,2}(\.[0-9]+)?" class="form-control"
+                [ngClass]="{'is-invalid': Latitude_incorrect}" id="floatingInput" placeholder="https://www.example.com"
+                (input)="updateLatitude($event)">
+            <label for="floatingInput">{{ 'GEOLOCATION.LATITUDE' | translate }}</label>
+            <div class="invalid-feedback">
+                {{ 'GEOLOCATION.ERROR_MESSAGE' | translate }} -10.12555, 90, 55.12
+            </div>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="text" (input)="onInputLongitude($event)" pattern="-?[0-9]{1,3}(\.[0-9]+)?" class="form-control"
+                [ngClass]="{'is-invalid': Longitude_incorrect}" id="floatingInput" placeholder="https://www.example.com"
+                (input)="updateLongitude($event)">
+            <label for="floatingInput">{{ 'GEOLOCATION.LONGITUDE' | translate }}</label>
+            <div class="invalid-feedback">
+                {{ 'GEOLOCATION.ERROR_MESSAGE' | translate }} -10.12555, 90, 55.12
+            </div>
+        </div>
+    </div>
+</form>
