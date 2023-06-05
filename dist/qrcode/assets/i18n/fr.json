@@ -1,0 +1,86 @@
+{
+    "HOME": {
+        "TITLE": "Bonjour le monde!",
+        "DESCRIPTION": "Ceci est une application Angular internationalisée."
+    },
+    "CHOICE": {
+        "QR_TYPE_LABEL": "Type de QR-code",
+        "QR_TYPE_PLACEHOLDER": "Sélectionnez un type de QR-code",
+        "QR_TYPE_OPTION_URL": "URLs",
+        "QR_TYPE_OPTION_WIFI": "Wifi",
+        "QR_TYPE_OPTION_TEXT": "Texte",
+        "QR_TYPE_OPTION_GEOLOC": "Geolocalisation",
+        "QR_TYPE_OPTION_VCARD": "Contact"
+    },
+    "TEXT_FORM": {
+        "FORM_TEXT_INPUT_LABEL": "Texte"
+    },
+    "QR_SIZE": {
+        "LABEL": "Taille du QR-code"
+    },
+    "QR_COLOR": {
+        "LABEL": "Choisissez la couleur du QR-code",
+        "COLOR_SQUARE_TEXT": "La couleur des carrés sera adaptée pour un meilleur contraste",
+        "COLORS_TITLE": "Couleurs"
+    },
+    "LOGO": {
+        "LABEL_SELECT_LOGO": "Sélectionnez un logo",
+        "LABEL_SELECT_LOGO_COMENT": "(format d'export PNG uniquement)",
+        "ALT_SELECTED_IMAGE": "Image sélectionnée",
+        "LABEL_ADD_CUSTOM_LOGO": "Ajoutez un logo personnalisé",
+        "SUPPR_LOGO": "Supprimmer logo",
+        "ADD_LOGO": "Ajouter un logo personnalisé"
+    },
+    "DOWNLOAD": {
+        "LABEL_BUTTON": "Télécharger"
+    },
+    "GEOLOCATION": {
+        "LATITUDE": "Latitude",
+        "LONGITUDE": "Longitude",
+        "ERROR_MESSAGE": "Veuillez indiquer un nombre tel que"
+    },
+    "WIFI": {
+        "PASSWORD": "Mot de passe du réseau wifi",
+        "SSID": "Nom du réseau wifi"
+    },
+    "CONTACT": {
+        "FIRST_NAME": "Prénom",
+        "LAST_NAME": "Nom",
+        "ADDRESS": "Adresse",
+        "CITY": "Ville",
+        "ZIP": "Code postal",
+        "P_NUMBER": "Téléphone fixe",
+        "H_NUMBER": "Téléphone portable",
+        "MAIL": "Email"
+    },
+    "QR_RESULT": {
+        "FORMAT": "Format d'export"
+    },
+    "LANGUAGE": {
+        "MENU": "LANGUES"
+    },
+    "PARAMETERS": {
+        "DETAILS_LABEL": "Niveau de correction d'erreurs",
+        "LABEL": "Niveau de correction d'erreurs ",
+        "DESCRIPTION": "Cela permet de pouvoir en cas de défaut ou taches sur le QR-code de pouvoir encore le scanner grâce à la redondance d'information",
+        "LOW": "Faible 7% de redondance",
+        "MEDIUM": "Moyen 15%",
+        "HIGH": "Élevé(défaut) 25%",
+        "VERY_HIGH": "Très élevé 30%",
+        "LOW_BUTTON": "Faible",
+        "MEDIUM_BUTTON": "Moyen",
+        "HIGH_BUTTON": "Élevé",
+        "VERY_HIGH_BUTTON": "Très élevé"
+    },
+    "DESIGN": {
+        "CARD_LABEL": "Design du QR-code"
+    },
+    "ACCESIBILITY": {
+        "LOGO_REMOVE": "Bouton pour supprimer le logo du QR-code",
+        "LOGO_UPLOAD": "Bouton pour mettre un logo personalisé à partir du stockage",
+        "COLORS": "Boutons pour choisir les couleurs du QR-code",
+        "COLOR": "Une couleur",
+        "LANGUAGES_MENU": "Menu pour changer de langue"
+    },
+    "REMINDER": "Pensez à tester votre QR-code avant de le partager"
+}
